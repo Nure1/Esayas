@@ -14,6 +14,7 @@ class Location(models.Model):
     width = models.FloatField()
     height = models.FloatField()
     square = models.FloatField(blank=True, null=True)
+    completed = models.BooleanField(default=False)
 
 
 
