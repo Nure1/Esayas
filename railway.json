@@ -4,7 +4,7 @@
 		"builder": "NIXPACKS"
 	},
 	"deploy": {
-		"startCommand": "web: gunicorn Esayas.wsgi --log-file -",
+		"startCommand": "python3 -m gunicorn Esayas.asgi:application",
 		"restartPolicyType": "ON_FAILURE",
 		"restartPolicyMaxRetries": 10
 	}
