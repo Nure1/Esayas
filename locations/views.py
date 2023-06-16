@@ -61,3 +61,6 @@ def export_to_excel(request):
 
 
     return response
+
+def home(request):
+    return HttpResponse('Esayas')

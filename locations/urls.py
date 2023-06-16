@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('', views.home, name='home'),
     path('locations/api/', views.LocationListAPIView.as_view(), name='locationApi'),
     path('location/create/', views.LocationCreateAPIView.as_view(), name='createLocation'),
     path('location/<int:pk>/', views.LocationUpdateAPIView.as_view(), name='updateLocation'),
