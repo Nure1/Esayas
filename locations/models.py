@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Location(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    fullName = models.CharField(max_length=100, null=True)
+    fullName = models.CharField(max_length=100)
     name_amharic = models.CharField(max_length=100)
     name_afaan_oromo = models.CharField(max_length=100)
     job_type_amharic = models.CharField(max_length=100)
