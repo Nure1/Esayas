@@ -4,7 +4,8 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
-    
+
+app_name = 'locations'
 urlpatterns = [
     path('', home, name='home'),
     path('about/', about, name='about'),

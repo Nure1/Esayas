@@ -1,0 +1,15 @@
+{% extends 'admin/base.html' %} {% block branding %}
+<h1
+	id="site-name"
+	style="display: flex; justify-content: space-between; align-item: center"
+>
+	<a href="{% url 'admin:index'%}">Esayas General Trading</a>
+	<div style="margin-left: 100px">
+		<a
+			href="{% url 'locations:export' %}"
+			style="margin-right: auto; color: '#fff"
+			>Download</a
+		>
+	</div>
+</h1>
+{% endblock %}
